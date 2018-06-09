@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lamija.art</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <style type="text/css">
+		
+		/*MOBILE VERSION*/
+
+		@media only screen and (max-width: 899px) {
+			
+			body {
+				/*background-color: #F2F2F2;*/
+				/*background-color: #F4D8CD;*/
+				background-color: #f9e9e3;
+				font-family: Courier New;
+				color: #282828;
+				width: 90vw;
+				margin: 0 auto;
+				/*font-size: 14px;*/
+			}
+
+			p {
+				/*font-family: Courier New;*/
+				color: #282828;
+			}
+
+			a, a:visited {
+				text-decoration: none;
+				color: #000;
+			}
+
+			a:hover, a:active {
+				text-decoration: underline;
+			}
+
+			h1 {
+				font-size: 1.5em;
+				font-weight: normal;
+				/*padding: 0.5em;*/
+			}
+
+			.nav {
+				width: 400px;
+				margin: 0 2em;
+				height: 22em;
+			}
+
+			.nav .nav_container {
+				position: absolute;
+				margin: 3em 1em 2em 1em;
+				/*z-index: 10;*/
+				/*display: flex;
+				flex-direction: column;
+				justify-content: space-between;*/
+
+
+				height: 300px;
+				/*margin-top: -200px;*/
+			  
+
+				text-align: left;
+			}
+
+			ul {
+				list-style-type: none;
+				padding-left: 0.5em;
+			}
+
+			li {
+				line-height: 2em;
+			}
+
+			.nav #navigation {
+				margin-top: 5em;
+				/*padding-left: 1em;*/
+			}
+
+			.content {
+				display: block;
+			}
+
+			.asset {
+				margin: 0.5em auto;
+				width: 100%;
+			}
+
+			.container {
+				width: 100%;
+				margin: 2em auto;
+			}
+
+			.text {
+				width: 90%;
+				margin: 2em auto;
+			}
+
+			img {
+				height: auto;
+				width: 100%;
+				/*max-width: 500px;*/
+				margin: 0 auto;
+			}
+
+			.container a {
+				margin: 0 auto;
+				align-items: center;
+
+			}
+
+			.caption {
+				display: block;
+				margin: auto;
+				text-align: center;
+				padding: 0.5em;
+			}
+		}
+
+
+		/*----------------------------------*/
+
+
+		/*DESKTOP VERSION*/
+
+		@media only screen and (min-width: 900px) {
+
+			body {
+				/*background-color: #F2F2F2;*/
+				/*background-color: #F4D8CD;*/
+				background-color: #f9e9e3;
+				font-family: Courier New;
+				color: #282828;
+				font-size: 14px;
+			}
+
+			p {
+				/*font-family: Courier New;*/
+				color: #282828;
+			}
+
+			a, a:visited {
+				text-decoration: none;
+				color: #000;
+			}
+
+			a:hover, a:active {
+				text-decoration: underline;
+			}
+
+			h1 {
+				font-size: 1.5em;
+				font-weight: normal;
+				/*padding: 0.5em;*/
+			}
+
+			.nav {
+			    float: left;
+			    min-height: 550px; /*???*/
+			    width: 200px;
+			    height: 100%;
+			    position: fixed;
+			    top: 0;
+			    z-index: 999999;
+			    left: 50px;
+			    /*background-color: #F4D8CD;*/
+			}
+
+			.nav .nav_container {
+				position: absolute;
+				top: 50%;
+				z-index: 10;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+
+					height: 400px;
+					margin-top: -200px;
+			  
+
+				text-align: left;
+			}
+
+			.nav #name {
+			    left: 0;
+			    /*width: 200px;*/
+			    padding-left: 1em;
+			    /*margin: 0 auto;*/
+			    text-align: center;
+			    margin-top: -3.5em;
+			}
+
+			.nav #overlay {
+				/*background: #F4D8CD;*/
+				background: #f9e9e3;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    height: 100%;
+			    width: 100%;
+			    z-index: 0;
+			    opacity: 0.8;
+			}
+
+			ul {
+				list-style-type: none;
+				padding-left: 0.5em;
+			}
+
+			li {
+				line-height: 2em;
+			}
+
+			.nav #navigation {
+				padding-left: 1em;
+			}
+
+			.content {
+				position: absolute;
+				top: 50%;
+				height: 400px;
+				margin-top: -200px;
+				margin-left: 300px;
+				padding-right: 50px;
+
+				overflow-x: scroll;
+				overflow-y: hidden;
+				white-space: nowrap;
+			}
+
+			.asset {
+				display: inline-block;
+				/*float: left;*/
+				margin: 0 0.5em;
+				vertical-align: top;
+			}
+
+
+			/*HOVER EFFECT START*/
+			.container {
+				position: relative;
+			}
+
+			.image {
+			  opacity: 1;
+			  display: block;
+			  /*width: 100%;*/
+			  transition: .5s ease;
+			  backface-visibility: hidden;
+			}
+
+			.caption {
+			  transition: .5s ease;
+			  opacity: 0;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  text-align: center;
+			}
+
+			.container:hover .image {
+			  opacity: 0.3;
+			}
+
+			.container:hover .caption {
+			  opacity: 1;
+			}
+
+			a.caption:hover {
+				text-decoration: none;
+			}
+			/*HOVER EFFECT END*/
+
+
+			img {
+				height: 400px;
+			}
+		}
+	</style> -->
+
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
+	<!-- <script src="js/jquery.mousewheel.js"></script>
+	<script>
+		$(function() {
+			$("body").mousewheel(function(event, delta) {
+				this.scrollLeft -= (delta * 1);
+				event.preventDefault();
+			});
+		});
+	</script> -->
+</head>
+<body>
+
+	<div class="nav">
+		<div class="nav_container">
+			<div id="name">
+				<h1><a href="/">lamija cehajic</a></h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li><a href="statement">artist statement</a></li>
+					<li><a href="bio">bio</a></li>
+					<li><a href="mailto:lamijacehajic@gmail.com">email</a></li>
+					<li><a href="https://www.facebook.com/lamijae" target="_blank" >fb</a></li>
+					<li><a href="https://www.instagram.com/persefonae/" target="_blank" >ig</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="content">
+
+		<div class="asset">
+			<div class="image">
+				<img src="img/pomme.jpg">
+			</div>
+		</div>
+
+		<div class="asset">
+			<div class="text">
+				<p>impermanence inverted, 2018<br><br>
+
+				plaster, bandages<br><br><br>
+
+
+				with the edible inside of the pomegranate, what <br>remains is the peel — the negative imprint of <br>what once existed. dozens of fertile seeds <br>enveloped in irresistible bursting fructose.<br><br>
+ 
+				the image of the pomegranate retains all its <br>mythical and symbolic associations — the fruit <br>of birth and fertility, yet the fruit that can <br>unrepairable bound the one it seduces to the <br>eternity of the underworld. with its <br>disappearance, the shadow its left, becoming a <br>carrier of its negative presence — the viola <br>that is left where it once existed. it is this <br>negative space that is used as a locus of new <br>growth — in this case, an artificially <br>stimulated recreation, the re-crystallisation <br>of the presence disappeared.</p>
+			</div>
+		</div>
+
+		<div class="asset">
+			<div class="text">
+				<p>the newly occupied space, susceptible to the <br>organic remain of the peel, becomes the ground <br>for the natural processes of decomposition and <br>degradation of the remaining original matter <br>while embodying the essence of what is <br>inevitably disappearing. it becomes the <br>plasticity of what is being longed for.<br><br>
+ 
+				the object itself becomes a hybrid between <br>what is inherited through the natural form used <br>and the human manipulation, and once liberated <br>from the hardened peel it can be distanced <br>from the essence of the fruit. it transgresses <br>from the particular specimen into the general <br>domain of the organic, becoming a deconstructed <br>ear of corn or the bodily in its familiarity. <br>it establishes itself as a micro biosphere, <br>providing the platform for the growth of <br>uncanny microorganisms, further visualising <br>the fragile relationship between the visible <br>and the individually imperceptible.</p>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
