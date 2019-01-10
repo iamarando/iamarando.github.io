@@ -1,132 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>lamija.art</title>
-	<!-- <style type="text/css"></style> -->
-	<link rel="stylesheet" href="style.css">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
-	<!-- <script src="js/jquery.mousewheel.js"></script> -->
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		html {
+			background-color: #f9e9e3;
+		}
+		* {
+			font-family: "Courier New", monospace;
+			/*font-size: 0.9rem;*/
+			/*line-height: 1.3rem;*/
+		}
 
-	<!-- <script type="text/javascript">
-		$(window).on("load resize",function(e){
-  			$(function() {
-				$("body").mousewheel(function(event, delta) {
-					this.scrollLeft -= (delta * 1);
-					event.preventDefault();
-				});
-			});
-		});
-	</script> -->
-	
-	<!-- <script type="text/javascript">
-		$(window).on('resize',function() {
-			var wi = $(window).width();
-			if (wi >= 900){
-				$(function() {
-					$("body").mousewheel(function(event, delta) {
-						this.scrollLeft -= (delta * 1);
-						event.preventDefault();
-					});
-				});
-			} else {
-				
-			}
-		});
-		$(document).ready(function() {
-    		$(window).trigger('resize');
-		});
-	</script> -->
+		a {
+			color: inherit;
+		}
 
-<!-- 	<script type="text/javascript">
-		
-		$(window).ready(function() {
-    		var wi = $(window).width();
+		.temp {
+			width: 450px;
+			height: 150px;
+			margin: auto;
+			/*padding: 20px 20px 20px 20px;*/
 
-    		if (wi >= 900){
-    			$(function() {
-					$("body").mousewheel(function(event, delta) {
-						this.scrollLeft -= (delta * 1);
-						event.preventDefault();
-					});
-				});
-    		}
-    	});
- 
-		$(window).resize(function() {
-    		var wi = $(window).width();
+			position: absolute; /*it can be fixed too*/
+        	left:0; right:0;
+        	top:0; bottom:0;
+        	margin:auto;
+			
+			/*this to solve "the content will not be cut when the window is smaller than the content": */
+        	max-width:90%;
+        	max-height:90%;
+        	overflow:auto;
+		}
 
-    		if (wi >= 900){
-    			$(function() {
-					$("body").mousewheel(function(event, delta) {
-						this.scrollLeft -= (delta * 1);
-						event.preventDefault();
-					});
-				});
-    		}
-		});
-	</script>
- -->
-	<!-- <script>
-		$(function() {
-			$("body").mousewheel(function(event, delta) {
-				this.scrollLeft -= (delta * 1);
-				event.preventDefault();
-			});
-		});
-	</script> -->
+		p {
+			display: block;
+			vertical-align: middle;
+		}
+	</style>
 </head>
 <body>
-
-	<div class="nav">
-		<div class="nav_container">
-			<div id="name">
-				<h1><a href="/">lamija cehajic</a></h1>
-			</div>
-			<div id="navigation">
-				<ul>
-					<li><a href="statement">artist statement</a></li>
-					<li><a href="bio">bio</a></li>
-					<li><a href="mailto:lamijacehajic@gmail.com">email</a></li>
-					<li><a href="https://www.facebook.com/lamijae" target="_blank" >fb</a></li>
-					<li><a href="https://www.instagram.com/persefonae/" target="_blank" >ig</a></li>
-				</ul>
-			</div>
-		</div>
-		<div id="overlay"></div>
-	</div>
-
-	<div class="content">
-
-		<div class="asset">
-			<div class="container">
-				<a href="impermanence_inverted"><img src="img/pomme.jpg" class="image"></a>
-				<a href="impermanence_inverted" class="caption">impermanence inverted, 2018</a>
-			</div>
-		</div>
-
-		<div class="asset">
-			<div class="container">
-				<a href="where_i_find_the_seed_of_home"><img src="img/bullet_wool.jpg" class="image"></a>
-				<a href="where_i_find_the_seed_of_home" class="caption">where i find the seed of home, 2018</a>
-			</div>
-		</div>
-
-		<div class="asset">
-			<div class="container">
-				<a href="capsulae"><img src="img/glass.jpg" class="image"></a>
-				<a href="capsulae" class="caption">capsulae, 2018</a>
-			</div>
-		</div>
-
-		<div class="asset">
-			<div class="container">
-				<a href="abandon_embrace"><img src="img/keys.jpg" class="image"></a>
-				<a class="caption">abandon / emabrace, 2018</a>
-			</div>
-		</div>
-
+	<div class="temp">
+		<p>Lamija is working on her new website...</p>
+		<p>But you can <a href="mailto:lamijacehajic@gmail.com">email</a> her, add her on <a href="https://www.facebook.com/lamijae">facebook</a>, or like her photos on <a href="https://www.instagram.com/persefonae/">instagram</a>.</p>
 	</div>
 </body>
 </html>
